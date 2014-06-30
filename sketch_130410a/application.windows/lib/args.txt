@@ -1,0 +1,3 @@
+ -Xms64m -Xmx1000m
+sketch_130410a
+sketch_130410a.jar,core.jar

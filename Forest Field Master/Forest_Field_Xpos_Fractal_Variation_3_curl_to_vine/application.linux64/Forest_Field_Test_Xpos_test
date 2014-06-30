@@ -1,0 +1,4 @@
+#!/bin/sh
+
+APPDIR=$(dirname "$0")
+java  -Djava.library.path="$APPDIR" -cp "$APPDIR/lib/Forest_Field_Test_Xpos_test.jar:$APPDIR/lib/core.jar:$APPDIR/lib/JSynClasses.jar:$APPDIR/lib/sonia_v2_9.jar:$APPDIR/lib/RXTXcomm.jar:$APPDIR/lib/serial.jar" Forest_Field_Test_Xpos_test

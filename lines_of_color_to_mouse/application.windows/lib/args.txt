@@ -1,0 +1,3 @@
+ -Xms64m -Xmx1000m
+lines_of_color_to_mouse
+lines_of_color_to_mouse.jar,core.jar

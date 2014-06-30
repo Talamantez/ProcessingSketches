@@ -1,0 +1,10 @@
+•plug mindflex into the upper-righthand port.
+•open Brain_Drone_Control.pde
+•run it to make sure packets are coming in
+•open the command prompt, cd into the node ardrone examples folder
+•run node readFile_takeOffAndLand.js
+
+*be careful! stop the program by pressing "ctrl+c" BEFORE taking 
+	the headset off to ensure that you've killed the loop. If you don't
+	do this, it will keep taking off and landing if its last reading
+	was over the benchmark.
