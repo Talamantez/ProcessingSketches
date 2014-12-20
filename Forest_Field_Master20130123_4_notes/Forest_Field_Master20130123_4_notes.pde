@@ -72,7 +72,7 @@ float c;//branch # modulator-randomizes when rssi reaches minimum
 
 //*************SET UP THE SKETCH*********\\
 void setup(){
-   size(screenWidth, screenHeight);//set the size to 1100 px wide and 768 high
+   size(displayWidth, displayHeight);//set the size to 1100 px wide and 768 high
    
   
   //**SECTION HEAD------SERIAL EVENT-----**//
@@ -80,7 +80,8 @@ void setup(){
 //size of of the window array "readings". This will then be averaged later as the
 //functional RSSI(the control value for all dynamics in the project)
   //println(Serial.list());
-  String arduinoPort = Serial.list()[0];
+  print(Serial.list());
+  String arduinoPort = Serial.list()[Serial.list().length-1];
   port = new Serial(this, arduinoPort, 9600);
   for (int thisReading = 0; thisReading < window_size; thisReading++)
     readings[thisReading]=0;
